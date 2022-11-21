@@ -13,8 +13,6 @@ with open('entrants.csv', mode='r') as csv_file:
         }
         entrants.append(entrant)
 
-random.shuffle(entrants)
-
 i = 0
 end = " "
 for entrant in entrants:
@@ -27,7 +25,7 @@ for entrant in entrants:
         end = " "
         
 print("\n\n\n")
-print("Loaded in " + str(len(entrants)) + " entrants and shuffled.")
+print("Loaded in " + str(len(entrants)) + " entrants.")
 
 try:
     seed = int(input("Enter seed: "))
